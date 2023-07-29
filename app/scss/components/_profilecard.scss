@@ -1,0 +1,76 @@
+@use '../abstracts' as a;
+
+.container{
+    padding: 1.25rem;
+    
+    &__profile-card{
+        width: 18.75rem;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1.25rem;
+        overflow: hidden; 
+        position: relative;
+        box-shadow:0 3px 30px rgb(0, 0, 0, .2)
+    }
+
+    &__card-bg{
+        width: inherit;
+        height: auto
+    }
+
+    &__victor{
+        border-radius: 50%;
+        border: 0.3125rem solid hsl(0, 0%, 100%);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 5rem;
+        left: 6.25rem;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 4.375rem;
+        font-size: 1.125rem;
+        color: a.$text-color;
+    }
+
+    h1 span{
+        font-weight: 400;
+        color: a.$muted-text-color;
+    }
+
+    small{
+        display: flex;
+        justify-content: center;
+        color: a.$muted-text-color;
+        margin-top: -0.625rem;
+        font-size: 0.875rem;
+    }
+
+    &__info{
+        width: inherit;
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid a.$border-color;
+        margin-top: 20px;
+        padding: 1.25rem
+    }
+
+    &__stats{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: a.$text-color;
+
+        small{
+            margin-top: -1.25rem;
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+    }
+
+
+}
