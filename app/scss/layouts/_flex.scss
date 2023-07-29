@@ -9,24 +9,31 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
 
     &__background{
         z-index: -1;
         position: absolute;
-        width: 43.75rem;
+        width: 1000px;
     }
 
     .bg--top{
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: flex-start;
+        top: -350px;
+        left: -500px;
 
+        @media screen and (min-width: 901px){
+            top: -550px;
+            left: -340px;
+        }
     }
 
     .bg--bottom{
-        bottom: 0
+        
+        @media screen and (min-width: 901px){
+            bottom: -680px;
+            right: -250px;
+        }
     }
 }
 
